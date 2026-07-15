@@ -3,48 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Club Portfolio - Mia San Mia</title>
+    <title>Our Work - Mia San Mia Fan Club</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg-bayern-red { background-color: #dc052d; }
+    </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 bg-light">
 
-    <header>
-        <h1>Mia San Mia Fan Club</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-bayern-red shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">MIA SAN MIA DUNDEE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <h2>Our Fan Club Highlights & Projects</h2>
+    <!-- Main Content -->
+    <main class="container my-5 flex-grow-1">
+        <h2 class="pb-2 border-bottom border-danger mb-4">Our Projects & Highlights</h2>
         
-        <!-- Extensible Portfolio Items Container -->
-        <section id="portfolio-gallery">
+        <!-- Responsive Grid for Extensible Portfolio Items -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
             
-            <article class="portfolio-item">
-                <h3>Match Day Meetups</h3>
-                <p>Organizing local screenings for the Bundesliga and Champions League fixtures.</p>
-            </article>
+            <!-- Item 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Match Day Meetups</h5>
+                        <p class="card-text text-muted">We coordinate weekly screenings for Bundesliga and Champions League matchdays at local venues.</p>
+                    </div>
+                </div>
+            </div>
 
-            <article class="portfolio-item">
-                <h3>Fan Zine Zine Design</h3>
-                <p>A digital newsletter featuring match ratings, tactical breakdowns, and member opinions.</p>
-            </article>
+            <!-- Item 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Weekly Fan Zine</h5>
+                        <p class="card-text text-muted">A digital newsletter featuring tactile match breakdowns, player ratings, and opinion pieces written by members.</p>
+                    </div>
+                </div>
+            </div>
 
-            <article class="portfolio-item">
-                <h3>Charity Five-a-Side Tournament</h3>
-                <p>An annual local football tournament hosted to raise funds for community sports programs.</p>
-            </article>
+            <!-- Item 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Charity Tournament</h5>
+                        <p class="card-text text-muted">Our annual 5-a-side community tournament raising money and gathering donations for local Dundee sports charities.</p>
+                    </div>
+                </div>
+            </div>
 
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 FC Bayern Fan Club. Built for educational purposes.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 FC Bayern Fan Club. Built for academic assessment.</small>
+        </div>
     </footer>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
