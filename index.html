@@ -12,26 +12,28 @@
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-bayern-red shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">MIA SAN MIA DUNDEE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                </ul>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-bayern-red shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MIA SAN MIA DUNDEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="container my-5 flex-grow-1">
-        <div class="p-5 mb-4 bg-white rounded-3 shadow-sm border-start border-danger border-5">
+        <section class="p-5 mb-4 bg-white rounded-3 shadow-sm border-start border-danger border-5">
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <h1 class="display-5 fw-bold text-dark">Welcome, Die Roten Supporters!</h1>
@@ -45,11 +47,11 @@
                          alt="Football Stadium Lights">
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <footer class="bg-dark text-white text-center py-3 mt-auto" aria-label="Site footer">
         <div class="container">
             <small>&copy; 2026 FC Bayern Fan Club. Built for academic assessment.</small>
         </div>
