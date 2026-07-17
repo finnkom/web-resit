@@ -12,29 +12,31 @@
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-bayern-red shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">MIA SAN MIA DUNDEE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-                </ul>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-bayern-red shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MIA SAN MIA DUNDEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="container my-5 flex-grow-1">
         <h1 class="pb-2 border-bottom border-danger mb-4">Our Projects & Highlights</h1>
         
         <!-- Responsive Grid for Extensible Portfolio Items -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section class="row row-cols-1 row-cols-md-3 g-4">
             
             <!-- Item 1 -->
             <div class="col">
@@ -44,7 +46,7 @@
                          style="height: 180px; object-fit: cover;" 
                          alt="Stadium match crowd shadow">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Match Day Meetups</h5>
+                        <h2 class="h5 card-title fw-bold">Match Day Meetups</h2>
                         <p class="card-text text-muted">We coordinate weekly screenings for Bundesliga and Champions League matchdays at local venues.</p>
                     </div>
                 </div>
@@ -58,7 +60,7 @@
                          style="height: 180px; object-fit: cover;" 
                          alt="Football on a green pitch">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Weekly Fan Zine</h5>
+                        <h2 class="h5 card-title fw-bold">Weekly Fan Zine</h2>
                         <p class="card-text text-muted">A digital newsletter featuring tactical match breakdowns, player ratings, and opinion pieces written by members.</p>
                     </div>
                 </div>
@@ -72,13 +74,13 @@
                          style="height: 180px; object-fit: cover;" 
                          alt="Soccer pitch goal line">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Charity Tournament</h5>
+                        <h2 class="h5 card-title fw-bold">Charity Tournament</h2>
                         <p class="card-text text-muted">Our annual 5-a-side community tournament raising money and gathering donations for local Dundee sports charities.</p>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
